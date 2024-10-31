@@ -1,0 +1,89 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background: #343a40;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Section Styling */
+section h2 {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+  font-weight: bold;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.card p, .card ul li {
+  color: #495057;
+  margin-bottom: 0.8rem;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+}
+
+.card ul li i {
+  color: #17a2b8;
+  margin-right: 0.5rem;
+}
+
+/* Links and Buttons */
+a.gov-link {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a.gov-link:hover {
+  color: #0056b3;
+}
+
+footer {
+  background: #343a40;
+  color: #ffffff;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
