@@ -2,7 +2,7 @@
 body {
   font-family: 'Georgia', serif;
   color: #264653;
-  background-color: #f4f1ea; 
+  background-color: #f4f1ea;
 }
 
 
@@ -63,7 +63,7 @@ h2{
   background: linear-gradient(
       rgba(236, 228, 185, 0.171),
       rgba(8, 15, 19, 0.589)
-    ), url(/images/valleimg.jpg) center/cover no-repeat;
+    ), url(../images/valleimg.jpg) center/cover no-repeat;
   color: #e9c46a;
 }
 
@@ -141,7 +141,7 @@ section {
 /* Reviews Section */
 
 #reviews {
-  background-image: url(/images/fotoslah/plantas.jpg) ;
+  background-image: url(../images/fotoslah/plantas.jpg) ;
   padding: 20px 60px;
   border: #d6d8d5 20px;
 }
@@ -176,7 +176,7 @@ section {
   background-color: #0b3d04;
   color: #ffffff;
   padding: 10px;
-  background-image: url(/images/fotoslah/plantas.jpg) ;
+  background-image: url(../images/fotoslah/plantas.jpg) ;
 
 }
 
@@ -188,7 +188,7 @@ section {
 
 /* Sustainability Section */
 #sustainability {
-  background-image: url(/images/fotoslah/productos.JPG);
+  background-image: url(../images/fotoslah/productos.JPG);
   color: #e9c46a; /* Soft Gold */
   background-position: 40% 80% ;
 

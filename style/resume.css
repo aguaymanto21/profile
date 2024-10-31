@@ -226,8 +226,8 @@ body {
 }
 
 .experience-item h3 i {
-  font-size: 1.2rem; /* Adjust size as needed */
-  color: #1a1f36; /* Or the color you want for icons */
+  font-size: 1.2rem;
+  color: #1a1f36;
 }
 
 .skills-container ul {
