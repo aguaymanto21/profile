@@ -1,0 +1,481 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+
+}
+
+/* Navbar and Hero Wrapper with Background Image and Overlay */
+.navbar-hero-wrapper {
+  position: relative;
+  background-image: url('/images/backgroundap.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-hero-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logoap {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  z-index: 2;
+}
+
+a.logoap a:hover{
+  transform: scale(1.5);
+
+}
+
+
+
+
+.logoap img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffbf00;
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  background: transparent;
+  padding: 20px;
+  color: white !important;
+}
+
+/* Section Styling */
+.section {
+  padding: 24px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color:  #81C784;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color:  #81C784;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+/* Impact Area Styling */
+.impact-area {
+  background-color: #E8F5E9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.impact-area h3 {
+  color: #ffbf00;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+ul, ol {
+  list-style-position: inside;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+a {
+  color: #2b6777;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffbf00;
+  text-decoration: none;
+}
+
+/* Section Heading */
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Survey Results */
+#survey-results {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Stats Container */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.stat-box {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.stat-box h2 {
+  color: #ffbf00;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Results Details */
+.results-details {
+  margin-top: 40px;
+}
+
+.result-item {
+  margin-bottom: 40px;
+}
+
+.result-item h3 {
+  font-size: 1.4em;
+  color: #2b6777;
+  margin-bottom: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: #e1e7e2;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #9bc97d;
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+/* Box Styling */
+.box {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Initiative Item */
+.initiative-item {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.initiative-item h3 {
+  color: #2b6777;
+  margin-bottom: 10px;
+}
+
+.initiative-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Carousel Item */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Gallery Styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.img-fluid {
+  border-radius: 8px;
+  transition: transform 0.3s;
+  height: 40px;
+
+}
+
+.impact-fao{
+  margin-top: 0%;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .stat-box {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .img-fluid {
+    margin-bottom: 15px;
+  }
+}
+
+.initiative-item .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.initiative-item .container .col-md-4 {
+  flex: 0 0 23%;
+  padding: 5px;
+}
+
+/*  Events and Workshops initiative */
+.events-workshops .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.events-workshops .col-md-6 {
+  flex: 0 0 48%;
+  padding: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .events-workshops .col-md-6 {
+    flex: 0 0 100%;
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #0073b1;
+}
+/* Container for team profiles */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profileteam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+}
+
+.profile-image-team {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #6ab04c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transform: scale(1.2);
+
+}
+
+.profile-image-team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.25);
+}
+
+.bioap {
+  background-color: #f0f4f7;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+/* Botanic Garden Section Styling */
+#botanic-garden {
+  background-color: #f0f7ed;
+  color: #0b1600;
+  padding: 5em 0;
+}
+
+#botanic-garden h2 {
+  font-size: 2.5rem;
+  color: #4a7c59;
+  margin-bottom: 1rem;
+}
+
+#botanic-garden p {
+  font-size: 1.125rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.garden-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+}
+
+.garden-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.garden-item:hover {
+  transform: translateY(-5px);
+}
+
+.garden-img {
+  width: 100%;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.garden-title {
+  font-size: 1.5rem;
+  color: #4a7c59;
+  margin: 0.75rem;
+  text-align: center;
+}
+
+.garden-description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 1.5rem 1.5rem;
+  text-align: center;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  .team-grid {
+    justify-content: space-between;
+  }
+  .profileteam {
+    width: 200px;
+  }
+}

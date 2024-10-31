@@ -1,0 +1,316 @@
+/* General Styles */
+body {
+  font-family: 'Georgia', serif;
+  color: #264653;
+  background-color: #f4f1ea; 
+}
+
+
+h2{
+  color: #0b3d04;
+}
+
+.sus{
+  color: #72c467;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 10;
+}
+
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand{
+  color: #0b3d04;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #0b3d04;
+  border-radius: 10px ;
+}
+
+.nav-link {
+  color: #e6e3dd !important;
+  font-weight: 500;
+}
+
+/* Add hover effect */
+.navbar .nav-item:hover .nav-link {
+  color: #0b1600 !important;
+  border: 2px solid #ffffff83;
+  border-radius: 25px;
+
+}
+
+/*  s */
+.navbar .nav-item:hover {
+  background-color: rgba(244, 247, 242, 0.63);
+  border-radius: 25px;
+}
+
+
+.hero {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(236, 228, 185, 0.171),
+      rgba(8, 15, 19, 0.589)
+    ), url(/images/valleimg.jpg) center/cover no-repeat;
+  color: #e9c46a;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero .btn-primary,
+.hero .btn-secondary {
+  border-radius: 20px;
+  padding: 0.75rem 2rem;
+}
+
+.btn-primary {
+  background-color: #0b3d04;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #a6d692;
+  color: #0b1600;
+}
+
+.btn-secondary {
+  background-color: #c96249;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #ff7856;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.text-primary {
+  color: #0b3d04 !important;
+}
+
+/* About Section */
+#about img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rooms Section */
+#rooms .card {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#rooms .card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #264653;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+.card-text {
+  color: #555;
+}
+
+/* Reviews Section */
+
+#reviews {
+  background-image: url(/images/fotoslah/plantas.jpg) ;
+  padding: 20px 60px;
+  border: #d6d8d5 20px;
+}
+
+#reviews .ti{
+  color: white;
+}
+
+
+
+#reviews blockquote {
+  background-color: #e3ebe3cb;
+  border-left: 5px solid #a6d692;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-style: italic;
+  color: #264653;
+}
+
+.blockquote-footer {
+  color: #b48605;
+}
+
+/* Amenities Section */
+#amenities {
+  padding: 10px;
+  background-image: url() ;
+
+}
+
+#amenities .badge {
+  background-color: #0b3d04;
+  color: #ffffff;
+  padding: 10px;
+  background-image: url(/images/fotoslah/plantas.jpg) ;
+
+}
+
+#amenities .badge:hover {
+  background-color: #d6d8d5;
+
+
+}
+
+/* Sustainability Section */
+#sustainability {
+  background-image: url(/images/fotoslah/productos.JPG);
+  color: #e9c46a; /* Soft Gold */
+  background-position: 40% 80% ;
+
+}
+
+#sustainability .container {
+  background-color: #0b16004d;
+  padding: 20px;
+}
+
+
+
+
+#sustainability p {
+  color: #f4f1ea;
+}
+
+/* Location Map Section */
+.map-responsive iframe {
+  border: 0;
+}
+
+#location-social{
+  background-color: #F0F7ED;
+}
+
+
+
+
+/* Social Media Section */
+#location-social .sociali {
+  color: #345f2f;}
+
+  #location-social .sociali:hover {
+  color: #72c467;
+}
+
+
+/* Contact Form */
+#contact .form-label {
+  color: #264653;
+}
+
+#contact .btn-primary {
+  border-radius: 25px;
+  background-color: #72c467;
+  color: #0b1600;
+}
+
+/* Botanic Garden Section Styling */
+#botanic-garden {
+  background-color: #f0f7ed;
+  color: #0b1600;
+  padding: 5em 0;
+}
+
+#botanic-garden h2 {
+  font-size: 2.5rem;
+  color: #4a7c59;
+  margin-bottom: 1rem;
+}
+
+#botanic-garden p {
+  font-size: 1.125rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.garden-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.garden-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.garden-item:hover {
+  transform: translateY(-5px);
+}
+
+.garden-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.garden-title {
+  font-size: 1.5rem;
+  color: #4a7c59;
+  margin: 0.75rem;
+  text-align: center;
+}
+
+.garden-description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 1.5rem 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #botanic-garden h2 {
+    font-size: 2rem;
+  }
+
+  #botanic-garden p {
+    font-size: 1rem;
+  }
+}
+.fa-whatsapp{
+  color: #ffffff;
+}
+
+.footer{
+  background-color: #0b16004d;
+  padding: 20px;
+  text-align: center;
+}

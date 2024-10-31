@@ -1,71 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css"
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <meta name="description" content="Personal Profile">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="My profile" />
-    <meta property="og:description" content="Hi, I am Adri and this is my proile" />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/97306422?s…00&u=63531892849d8ab4102eef7a2ee651d38985f4ee&v=4" />
-    <meta property="og:url" content="The URL of your web page" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <div class="container">
-    <div>
-      <body>
-        <div class="card-white">
-        <h1>WELCOME TO MY PROFILE!</h1>
-        <img src="images/profile.png" alt="Adriana's profile picture">
-        <h2>I am Adriana Apaza</h2>
-        <p> I am a Programmer and Economist with experience in project execution,
-          education and community economic development with interests in environmental sustainability, and tech with social impact.
-        </p>
-        <button type="button" class="btn-blue" ><strong>Discover My Work</strong> </button>
+<body>
+<!-- Navigation Bar -->
+  <header class="navbar">
+    <nav class="navbar-container">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="#">
+          <img src="images/logo.jpg" alt="Logo">
+        </a>
       </div>
 
-    </div>
+      <!-- Navbar Links -->
+      <div class="navbar-links">
+        <a href="#initiatives">Initiatives</a>
+        <a href="#coding">Coding Projects</a>
+        <a href="#econdev">EconDev Consulting</a>
+        <a href="#resume">Resume</a>
+        <a href="https://www.linkedin.com/in/adriana-apaza" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:adrianadlpilar@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </nav>
+  </header>
 
-    <div class="card-white">
-      <h2>Work Experience &#128188</h2>
-      <p> I have worked on community development and infrastructure projects across Peru. My roles include overseeing hospital construction projects at Pronis, PASLC and consulting on infrastructure and social development.
-        I've also contributed to public sector initiatives focused on water and sanitation, public health and irrigation .
+
+  <!-- Profile Card -->
+  <div class="container profile-card">
+    <div class="profile-image">
+      <img src="images/profile.jpeg" alt="Adriana's profile picture">
+    </div>
+    <div class="profile-info">
+      <h1>Adriana Apaza</h1>
+      <h2>Economist & Web Developer</h2>
+      <p>
+        I am an Economist &  Programmer  with experience in project execution, education, and community economic development. My interests include environmental sustainability, economic development,  and tech with social impact.
       </p>
-    </div>
-
-    <div class="card-white">
-      <h2>Projects &#128203</h2>
-        <ul class="projects">
-          <li> Projects </li>
-          <li> Consulting Infraestructure Projects </li>
-          <li> Infraestructure and tech Projects </li>
-        </ul>
-    </div>
-
-    <div class="card-white">
-      <h2> Education &#127891</h2>
-      <p> I hold a Bachelor's degree in Economics from Drexel University.
-      </p>
-    </div>
-
-    <div class="card-white">
-      <h2>Interests & hobbies &#128507;</h2>
-      <p> Outdoors, coffee, coding, and plants.
-      </p>
-    </div>
-
-
-    <div class="card-white">
-      <h2>Follow Me &#129330</h2>
-      <ul class="list-inline">
-        <li> <a href="https://github.com/aguaymanto21" target="_blank"> <i class="fa-brands fa-github"></i></a></li>
-        <li> <a href="https://www.linkedin.com/in/adriana-apaza/" target="_blank">  <i class="fa-brands fa-linkedin"></i></a></li>
-      </ul>
+      <a href="mailto:adrianadlpilar@gmail.com">
+        <button type="button" class="btn-contact">Contact</button>
+      </a>
+      <a href="pages/resume.html">
+        <button type="button" class="btn-contact">Resume</button>
+      </a>
     </div>
   </div>
 
+ <!-- Initiatives -->
+  <section id="initiatives" class="section">
+    <div class="container" >
+      <h2>Initiatives</h2>
+      <div class="work-grid">
+        <a href="pages/apuproject.html" class="work-item-link">
+          <div class="work-item" style="background-image: url('images/apuprojectlogo.png');">
+            <div class="text-overlay">
+              <h3>APU PROJECT</h3>
+              <p>Agri-tech Project</p>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="pages/lahuerta.html" class="work-item-link">
+          <div class="work-item" style="background-image: url('images/lahuertalogo.png');">
+            <div class="text-overlay">
+              <h3>LA HUERTA REFUGIO</h3>
+              <p>Sustainable Tourism</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="/pages/iro.html" class="work-item-link">
+          <div class="work-item" style="background-image: url('images/irologo2.PNG');">
+            <div class="text-overlay">
+              <h3>IRO</h3>
+              <p>Mental Health WebApp</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Coding Projects -->
+  <section id="coding" class="section">
+    <div class="container">
+      <h2>Coding Projects</h2>
+      <div class="projects-container">
+
+        <!-- Project 1: LATRU -->
+        <div class="project-item">
+          <h3>LATRU</h3>
+          <div class="project-media">
+            <img src="/images/latru.gif" alt="LATRU Demo GIF">
+          </div>
+          <div class="project-details">
+            <p><strong>AI Product Buying Assistant</strong></p>
+            <p><strong>Timeframe:</strong> September 2 weeks (group project)</p>
+            <p><strong>Description:</strong> An AI-powered tool that assists users in making informed purchasing decisions based on personalized recommendations and data analysis.</p>
+            <p><strong>Technologies Used:</strong> Ruby on Rails, ChatGPT API, CSS</p>
+          </div>
+        </div>
+
+        <!-- Project 2: VINILO VIBES -->
+        <div class="project-item">
+          <h3>VINILO VIBES</h3>
+          <div class="project-media">
+            <img src="/images/vinilovibes.gif" alt="Vinilo Vibes Demo GIF">
+          </div>
+          <div class="project-details">
+            <p><strong>Vinyl E-commerce</strong></p>
+            <p><strong>Timeframe:</strong> September 2 weeks (group project)</p>
+            <p><strong>Description:</strong> An e-commerce platform tailored for vinyl record enthusiasts, featuring an interactive catalog, user reviews, and a seamless checkout experience.</p>
+            <p><strong>Technologies Used:</strong> Ruby on Rails, JavaScript, CSS</p>
+            <a href="https://vinilo-vibes-backup-e31ed0c81523.herokuapp.com/" target="_blank" class="project-link">Visit Site</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EconDevelopment Section -->
+  <section id="econdev" class="section">
+    <div class="container">
+        <h2 class="text-primary mb-4">EconDev Projects</h2>
+        <div class="econ-grid">
+            <a href="/pages/park.html" class="econ-item-link">
+                <div class="econ-item">
+                  <h3>Creation of Public Spaces - Children's Park</h3>
+                  <p>Located in Aymaña, Cotahuasi</p>
+                </div>
+            </a>
+            <a href="/pages/watersanitation.html" class="econ-item-link">
+                <div class="econ-item">
+                  <h3>Water and Sanitation Access for Rural communities</h3>
+                  <p>Located in Cayarani, Arequipa</p>
+
+                </div>
+            </a>
+
+            <a href="pages/irrigation.html" class="econ-item-link">
+                <div class="econ-item">
+                  <h3>Improvement of Irrigation Canals</h3>
+                  <p>Located in Tiabaya, Arequipa</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+  </section>
+
+
+<!-- Work Experience -->
+  <section id="resume" class="section">
+    <div class="container">
+        <h2>Work Experience</h2>
+        <div class="experience-container">
+            <div class="experience-title">
+                <h3>Pronis</h3>
+                <h3>Independent Consultant</h3>
+                <h3>PASLC</h3>
+                <h3>ALSOLI (Food Industry)</h3>
+                <h3>Drexel University</h3>
+                <h3>WPFSI(VESTIN)</h3>
+                <h3>Peru Durable (Travel Agency)</h3>
+            </div>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <p>Project Monitoring and Evaluation Specialist</p>
+                    <span>February 2024 – April 2024</span>
+                </div>
+                <div class="experience-item">
+                    <p>Project Development Consultant</p>
+                    <span>March 2023 – December 2023</span>
+                </div>
+                <div class="experience-item">
+                    <p>Data Analytics, Planning and Budgeting Consultant</p>
+                    <span>March 2022 – August 2022</span>
+                </div>
+                <div class="experience-item">
+                    <p>Data Processing Specialist</p>
+                    <span>August 2021 – February 2022</span>
+                </div>
+                <div class="experience-item">
+                    <p>Multicultural Programmer / Resident Assistant</p>
+                    <span>March 2019 – June 2021</span>
+                </div>
+                <div class="experience-item">
+                    <p>Program Coordinator</p>
+                    <span>April 2018 – September 2018</span>
+                </div>
+                <div class="experience-item">
+                    <p>Event Coordinator</p>
+                    <span>January 2015 – July 2015</span>
+                </div>
+
+                <a href="pages/resume.html">
+                    <button type="button" class="btn-contact">See full CV</button>
+                </a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <!-- Skills Section -->
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>JavaScript</span><span>Python</span><span>Java</span><span>C#</span>
+      <span>React.js</span><span>Node.js</span><span>Angular</span><span>Django</span>
+      <span>MySQL</span><span>MongoDB</span><span>PostgreSQL</span><span>Git</span>
+      <span>Docker</span><span>Jenkins</span><span>AWS</span><span>Scrum</span>
+      <span>Kanban</span><span>Problem-Solving</span><span>Debugging</span>
+      <span>Team Collaboration</span><span>Communication</span>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Adriana Apaza Tintaya</p>
+</footer>
 </body>
 </html>

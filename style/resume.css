@@ -1,0 +1,264 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+header.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+}
+.name{
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.name:hover{
+  color:  #ff6600;
+}
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo styling */
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navbar links styling */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #ff6600;
+  color: #ffffff;
+}
+
+/* Icons styling */
+.navbar-links a i {
+  font-size: 20px;
+  color: #003366;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover i {
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+
+/*  */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header / Hero Section */
+.hero {
+  background: #1a1f36; /* Dark blue */
+  color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+  color: #ff8c00; /* Orange */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.email-link {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #ff8c00;
+}
+
+/* Sections */
+.section {
+  padding: 2rem 1rem;
+  background: #ffffff;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  color: #1a1f36; /* Dark blue */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Work Experience Section */
+.experience-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.experience-item h3 {
+  font-size: 1.3rem;
+  color: #1a1f36;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-item h3 i {
+  margin-right: 0.5rem;
+}
+
+.experience-item .role {
+  font-weight: bold;
+  color: #ff8c00;
+  text-align: center;
+}
+
+.experience-item .date {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.experience-item ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #666;
+  text-align: left;
+
+}
+
+/* Skills & Languages Section */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.skill, .languages {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  text-align: center;
+}
+
+.skills-container h3 {
+  font-size: 1.3rem;
+  color: #1a1f36;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item h3 i {
+  font-size: 1.2rem; /* Adjust size as needed */
+  color: #1a1f36; /* Or the color you want for icons */
+}
+
+.skills-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Certifications Section */
+.certifications-list {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.certifications-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+  background: #1a1f36;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
