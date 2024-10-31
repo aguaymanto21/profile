@@ -15,7 +15,7 @@ body {
 /* Navbar and Hero Wrapper with Background Image and Overlay */
 .navbar-hero-wrapper {
   position: relative;
-  background-image: url('/images/backgroundap.jpg'); 
+  background-image: url('../images/backgroundap.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -356,3 +356,10 @@ body {
   margin: 10px 0; /* Adjust vertical spacing between paragraphs */
   line-height: 1.6; /* Increase line height for better readability */
 }
+
+.footer{
+  text-align: center;
+  background-color: #333;
+  color: #e8e8e8;
+  padding: 20px;
+}
