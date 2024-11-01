@@ -225,7 +225,7 @@ p {
 
 /* Progress Bar */
 .progress-bar {
-  background-color: #e1e7e2;
+  background-color: #95c4a3;
   border-radius: 20px;
   overflow: hidden;
   height: 20px;
@@ -233,10 +233,12 @@ p {
 }
 
 .progress {
-  background-color: #9bc97d;
+  background-color: #73d432ce;
   height: 100%;
   transition: width 0.4s ease;
 }
+
+
 
 /* Box Styling */
 .box {
@@ -267,18 +269,42 @@ p {
   border-radius: 8px;
 }
 
-/* Carousel Item */
-.carousel-item img {
-  width: 100%;
-  height: auto;
+/* Carousel Marquee */
+.carousel-marquee {
+  overflow: hidden;
+  white-space: nowrap;
   border-radius: 8px;
-  object-fit: cover;
+  background-color: #f9f9f9;
+  padding: 5px 0;
+  position: relative;
 }
 
-.carousel-inner {
-  border-radius: 8px;
-  overflow: hidden;
+/* Carousel Content */
+.carousel-content {
+  display: inline-flex;
+  align-items: center;
+  animation: scroll 55s linear infinite;
 }
+
+.carousel-content img {
+  max-width: 200px; /* Adjust size as needed */
+  margin: 0 5px; /* Spacing between images */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
 
 /* Gallery Styles */
 .row {
@@ -450,10 +476,12 @@ p {
 }
 
 .garden-img {
-  width: 100%;
-  height: 20px;
+  width: 80%;
+  height: auto;
+  max-height: 160px;
   object-fit: cover;
   border-radius: 8px;
+  margin: 10px auto;
 }
 
 .garden-title {
